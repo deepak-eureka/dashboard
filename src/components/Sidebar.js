@@ -3,49 +3,19 @@ import styled from "styled-components";
 import { Link, withRouter } from "react-router-dom";
 import "./sidebar.css";
 
+import {
+  DropdownItem,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+} from "reactstrap";
+
 class SideNav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       activePath: props.location.pathname,
-      items: [
-        {
-          path: "/",
-          name: "Home",
-          css: require("../assets/home.png"),
-          key: 0,
-        },
-        {
-          path: "/course",
-          name: "Course",
-          css: require("../assets/course.png"),
-          key: 1,
-        },
-        {
-          path: "/project",
-          name: "Project",
-          css: require("../assets/project.png"),
-          key: 2,
-        },
-        {
-          path: "/progress",
-          name: "Progress",
-          css: require("../assets/progress.png"),
-          key: 3,
-        },
-        {
-          path: "/competitions",
-          name: "Competitions",
-          css: require("../assets/competitions.png"),
-          key: 4,
-        },
-        {
-          path: "/settings",
-          name: "Settings",
-          css: require("../assets/settings.png"),
-          key: 5,
-        },
-      ],
+      dropdownOpen: false,
     };
   }
 
@@ -53,8 +23,14 @@ class SideNav extends React.Component {
     this.setState({ activePath: path });
   };
 
+  toggle = () => {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen,
+    });
+  };
+
   render() {
-    const { items, activePath } = this.state;
+    const { activePath } = this.state;
     return (
       <div className="styled-sidebar">
         <div className="logo-title">
@@ -69,18 +45,90 @@ class SideNav extends React.Component {
           </div>
         </div>
 
-        {items.map((item) => {
-          return (
-            <NavItem
-              path={item.path}
-              name={item.name}
-              css={item.css}
-              onItemClick={this.onItemClick}
-              active={item.path === activePath}
-              key={item.key}
-            />
-          );
-        })}
+        <NavItem
+          path="/"
+          name="Home"
+          css={require("../assets/home.png")}
+          onItemClick={this.onItemClick}
+          active={"/" === activePath}
+        ></NavItem>
+
+        <NavItem
+          path="/course"
+          name="Course"
+          css={require("../assets/course.png")}
+          onItemClick={this.onItemClick}
+          active={"/course" === activePath}
+        ></NavItem>
+
+        <NavItem
+          path="/project"
+          name="Project"
+          css={require("../assets/project.png")}
+          onItemClick={this.onItemClick}
+          active={"/project" === activePath}
+        ></NavItem>
+        <div className="drop-align">
+          <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+            <DropdownToggle nav caret></DropdownToggle>
+            <DropdownMenu>
+              <div className="menu">
+                <DropdownItem>
+                  <img
+                    src={require("../assets/projects/dataset.svg")}
+                    alt=""
+                  ></img>
+                  Dataset
+                </DropdownItem>
+                <DropdownItem>
+                  <img
+                    src={require("../assets/projects/model.svg")}
+                    alt=""
+                  ></img>
+                  Model
+                </DropdownItem>
+                <DropdownItem>
+                  <img
+                    src={require("../assets/projects/test.svg")}
+                    alt=""
+                  ></img>
+                  Test
+                </DropdownItem>
+                <DropdownItem>
+                  <img
+                    src={require("../assets/projects/Deploy.svg")}
+                    alt=""
+                  ></img>
+                  Deploy
+                </DropdownItem>
+              </div>
+            </DropdownMenu>
+          </Dropdown>
+        </div>
+
+        <NavItem
+          path="/progress"
+          name="Progress"
+          css={require("../assets/progress.png")}
+          onItemClick={this.onItemClick}
+          active={"/progress" === activePath}
+        ></NavItem>
+
+        <NavItem
+          path="/competitions"
+          name="Competitions"
+          css={require("../assets/competitions.png")}
+          onItemClick={this.onItemClick}
+          active={"/competitions" === activePath}
+        ></NavItem>
+
+        <NavItem
+          path="/settings"
+          name="Settings"
+          css={require("../assets/settings.png")}
+          onItemClick={this.onItemClick}
+          active={"settings" === activePath}
+        ></NavItem>
         <div className="logout">
           <div>
             <Link to="/logout">
@@ -95,8 +143,6 @@ class SideNav extends React.Component {
     );
   }
 }
-
-const RouterSideNav = withRouter(SideNav);
 
 const StyledNavItem = styled.div`
   height: 40px;
@@ -145,6 +191,8 @@ class NavItem extends React.Component {
     );
   }
 }
+
+const RouterSideNav = withRouter(SideNav);
 
 export default class Sidebar extends React.Component {
   render() {
