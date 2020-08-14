@@ -1,0 +1,30 @@
+.home-main {
+  margin-top: 4em;
+  margin-left: 250px;
+  text-align: center;
+}
+.home-main img {
+  width: 50%;
+}
+
+.headings {
+  margin-top: 3rem;
+  color: grey;
+  text-shadow: grey 1px 0 3px;
+}
+
+.sub-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn button {
+  text-transform: none;
+  background-color: #1c9cd6;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  margin: 1rem;
+  font-weight: bold;
+}

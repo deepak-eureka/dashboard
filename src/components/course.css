@@ -1,0 +1,59 @@
+.course img {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 75%;
+  background-image: url("../assets/courseBG.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.course h1 {
+  font-size: 2rem;
+  margin-right: 50px;
+}
+
+.dropdown-toogle {
+  width: 80%;
+  border: none;
+  box-shadow: 1px 1px 1px 1px gray;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-secondary:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active,
+.show > .btn-secondary.dropdown-toggle {
+  color: black;
+  background-color: white;
+}
+
+.row {
+  margin: 10px;
+}
+
+.dropdown-menu {
+  width: 80%;
+}
+
+.dropdown-menu.show {
+  /* display: block; */
+  display: contents;
+}
+
+.dropdown-item {
+  padding: 0;
+}
