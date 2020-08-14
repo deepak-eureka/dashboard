@@ -39,12 +39,13 @@ class SideNav extends React.Component {
               <img src={require("../assets/logo.png")} alt="" />
             </Link>
           </div>
-          <div>
+          <div >
             <h1>EUREKA</h1>
             <h4>Learn, Share and Build</h4>
           </div>
         </div>
 
+<<<<<<< HEAD
         <NavItem
           path="/"
           name="Home"
@@ -129,6 +130,21 @@ class SideNav extends React.Component {
           onItemClick={this.onItemClick}
           active={"settings" === activePath}
         ></NavItem>
+=======
+
+        {items.map((item) => {
+          return (
+            <NavItem 
+              path={item.path}
+              name={item.name}
+              css={item.css}
+              onItemClick={this.onItemClick}
+              active={item.path === activePath}
+              key={item.key}
+            />
+          );
+        })}
+>>>>>>> changes in UI
         <div className="logout">
           <div>
             <Link to="/logout">

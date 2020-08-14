@@ -1,4 +1,4 @@
-.course img {
+.course-img {
   position: fixed;
   bottom: 0;
   right: 0;
@@ -16,9 +16,11 @@
 }
 
 .dropdown-toogle {
-  width: 80%;
+  width: 100%;
   border: none;
+  height: 70px;
   box-shadow: 1px 1px 1px 1px gray;
+  text-align: center;
 }
 
 .btn-secondary {
@@ -56,4 +58,12 @@
 
 .dropdown-item {
   padding: 0;
+}
+
+.main-right{
+  margin-left: 40px;
+}
+
+.menu-item{
+  display: flex;
 }
