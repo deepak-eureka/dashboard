@@ -4,7 +4,7 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./components/Home";
 import Sidebar from "./components/Sidebar";
-import Course from "./components/Course";
+import Course from "./components/test";
 
 function App() {
   return (
