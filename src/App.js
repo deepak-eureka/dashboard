@@ -4,7 +4,8 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Home } from "./components/Home";
 import Sidebar from "./components/Sidebar";
-import Course from "./components/test";
+import Course from "./components/Course";
+import Project from "./components/Projects";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
             <Switch>
               <Route exact path="/" component={Home}></Route>
               <Route exact path="/course" component={Course}></Route>
+              <Route exact path="/project" component={Project}></Route>
             </Switch>
           </div>
         </div>
