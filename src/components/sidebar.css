@@ -1,7 +1,7 @@
 .styled-sidebar {
   position: fixed;
   height: 100%;
-  width: 350px; /* Set the width of the sidebar */
+  width: 280px; /* Set the width of the sidebar */
   z-index: 1;
   top: 0;
   background-color: white;
@@ -68,7 +68,7 @@
   padding: 20px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   .styled-sidebar {
     height: 100%;
     width: 80px;
