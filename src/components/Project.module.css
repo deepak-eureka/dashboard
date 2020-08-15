@@ -1,0 +1,55 @@
+.main {
+  width: 70%;
+  margin: auto;
+}
+.card {
+  box-shadow: 3px 3px 5px gray;
+  margin: 10px;
+}
+.card_title {
+  text-align: left;
+}
+.text {
+  height: fit-content;
+  width: 20%;
+  float: left;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.content {
+  height: fit-content;
+  width: 60%;
+  float: left;
+  padding: 10px;
+  background-color: #f3f3f3;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.share {
+  color: rgb(40, 212, 218);
+}
+.child {
+  float: left;
+}
+.btn {
+  height: 20px;
+  width: 10px;
+}
+.switch {
+  width: 30px;
+  height: 20px;
+}
+.img {
+  float: left;
+}
+.add {
+  float: right;
+}
+.add_btn {
+  background-color: rgb(48, 191, 196);
+  border: none;
+  text-align: center;
+  border-radius: 50%;
+}
