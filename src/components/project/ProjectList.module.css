@@ -1,0 +1,35 @@
+.heading {
+  margin-top: 3rem;
+  color: grey;
+  text-shadow: grey 1px 0 3px;
+}
+
+.card {
+  align-items: flex-start;
+  box-shadow: 3px 3px 5px grey;
+  width: 90%;
+  padding: 15px;
+  margin: 30px;
+  font-size: 1rem;
+}
+
+.cardGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.imgLogo {
+  width: 100px;
+}
+
+.r {
+  align-items: center;
+}
+
+.color {
+  background-color: #1c9cd6;
+
+  border-radius: 30px;
+}

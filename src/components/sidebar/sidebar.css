@@ -1,7 +1,7 @@
 .styled-sidebar {
   position: fixed;
   height: 100%;
-  width: 280px; /* Set the width of the sidebar */
+  width: 250px; /* Set the width of the sidebar */
   z-index: 1;
   top: 0;
   background-color: white;
@@ -37,6 +37,7 @@
 }
 
 .logo-title h1 {
+  color: white;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -64,6 +65,7 @@
 }
 
 .logout h1 {
+  color: #1c9cd6;
   font-size: 1.3rem;
   padding: 20px;
 }

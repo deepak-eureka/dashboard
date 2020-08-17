@@ -19,9 +19,9 @@ export default class Course extends Component {
 
     this.state = {
       iconsAssets: [
-        require("../assets/courses/doc.png"),
-        require("../assets/courses/pro.png"),
-        require("../assets/courses/vid.png"),
+        require("../../assets/courses/doc.png"),
+        require("../../assets/courses/pro.png"),
+        require("../../assets/courses/vid.png"),
       ],
       dislayIcons: false,
       courses: [
@@ -199,7 +199,7 @@ export default class Course extends Component {
                                     > */}
                                     <img
                                       className="img-2"
-                                      src={require("../assets/courses/vid.png")}
+                                      src={require("../../assets/courses/vid.png")}
                                       alt=""
                                     ></img>
                                     {/* </Link>
@@ -207,7 +207,7 @@ export default class Course extends Component {
                                       to={this.props.location.pathname + "/doc"}
                                     > */}
                                     <img
-                                      src={require("../assets/courses/doc.png")}
+                                      src={require("../../assets/courses/doc.png")}
                                       alt=""
                                     ></img>
                                     {/* </Link>
@@ -217,7 +217,7 @@ export default class Course extends Component {
                                     > */}
                                     <img
                                       className="img-2"
-                                      src={require("../assets/courses/pro.png")}
+                                      src={require("../../assets/courses/pro.png")}
                                       alt=""
                                     ></img>
                                     {/* </Link> */}
@@ -237,7 +237,7 @@ export default class Course extends Component {
         </Container>
         <img
           className="course-img"
-          src={require("../assets/courseBG.png")}
+          src={require("../../assets/courseBG.png")}
           alt=""
         ></img>
       </div>

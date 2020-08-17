@@ -2,13 +2,23 @@
   width: 70%;
   margin: auto;
 }
+
+.heading {
+  margin-top: 3rem;
+  color: grey;
+  text-shadow: grey 1px 0 3px;
+}
+
 .card {
   box-shadow: 3px 3px 5px gray;
   margin: 10px;
 }
+
 .card_title {
   text-align: left;
+  font-size: 1.5rem;
 }
+
 .text {
   height: fit-content;
   width: 20%;
@@ -18,6 +28,7 @@
   border-radius: 3px;
   margin-right: 10px;
 }
+
 .content {
   height: fit-content;
   width: 60%;
@@ -27,29 +38,61 @@
   border-radius: 3px;
   margin-right: 10px;
 }
+
 .share {
   color: rgb(40, 212, 218);
 }
+
 .child {
   float: left;
 }
+
 .btn {
   height: 20px;
   width: 10px;
 }
-.switch {
-  width: 30px;
-  height: 20px;
+
+.switch span {
+  /* width: 30px; */
+  height: 50px;
+  width: 70px;
 }
+
 .img {
   float: left;
 }
+/* 
 .add {
   float: right;
 }
+
 .add_btn {
   background-color: rgb(48, 191, 196);
   border: none;
   text-align: center;
   border-radius: 50%;
+} */
+
+.align_row_items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aligncol {
+  display: flex;
+  flex-direction: column;
+}
+
+.shareNDel {
+  color: #1c9cd6;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+  color: black;
 }
