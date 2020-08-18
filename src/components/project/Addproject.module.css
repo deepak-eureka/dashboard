@@ -1,0 +1,61 @@
+.layout {
+  margin: 1rem;
+}
+
+.subHeader {
+  font-size: 2rem;
+  margin: 1rem;
+}
+
+.alignItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 100px;
+}
+
+.inputField {
+  width: 500px;
+  border: none;
+  font-size: 1.8rem;
+}
+
+.imgBG {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.card {
+  border: none;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.mar {
+  margin: 1rem;
+}
+
+.subContainer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+}
+
+.BgImg {
+  width: 100px;
+  padding: 20px;
+}
+
+.alignRow {
+  display: flex;
+}
+
+.borderImg {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 1);
+}

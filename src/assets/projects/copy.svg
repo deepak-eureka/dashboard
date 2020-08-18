@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 25.474">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-1, .cls-2 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Copy" transform="translate(-16 -115)">
+    <path id="path" class="cls-1" d="M24,0H0V-24H24Z" transform="translate(16 140)"/>
+    <path id="ic_copy" class="cls-2" d="M18.211,1H4.316A2.315,2.315,0,0,0,2,3.316V19.526H4.316V3.316H18.211V1Zm3.474,4.632H8.947A2.316,2.316,0,0,0,6.632,7.947V24.158a2.316,2.316,0,0,0,2.316,2.316H21.684A2.317,2.317,0,0,0,24,24.158V7.947a2.317,2.317,0,0,0-2.316-2.316ZM8.947,7.947H21.684V24.158H8.947Z" transform="translate(15 114)"/>
+  </g>
+</svg>

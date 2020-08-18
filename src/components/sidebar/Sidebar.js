@@ -36,20 +36,19 @@ class SideNav extends React.Component {
         <div className="logo-title">
           <div>
             <Link to="/">
-              <img src={require("../assets/logo.png")} alt="" />
+              <img src={require("../../assets/dashboard/logo.png")} alt="" />
             </Link>
           </div>
-          <div >
-            <h1>EUREKA</h1>
+          <div>
+            <h1>Eureka</h1>
             <h4>Learn, Share and Build</h4>
           </div>
         </div>
 
-<<<<<<< HEAD
         <NavItem
           path="/"
           name="Home"
-          css={require("../assets/home.png")}
+          css={require("../../assets/dashboard/home.png")}
           onItemClick={this.onItemClick}
           active={"/" === activePath}
         ></NavItem>
@@ -57,7 +56,7 @@ class SideNav extends React.Component {
         <NavItem
           path="/course"
           name="Course"
-          css={require("../assets/course.png")}
+          css={require("../../assets/dashboard/course.png")}
           onItemClick={this.onItemClick}
           active={"/course" === activePath}
         ></NavItem>
@@ -65,7 +64,7 @@ class SideNav extends React.Component {
         <NavItem
           path="/project"
           name="Project"
-          css={require("../assets/project.png")}
+          css={require("../../assets/dashboard/project.png")}
           onItemClick={this.onItemClick}
           active={"/project" === activePath}
         ></NavItem>
@@ -76,28 +75,28 @@ class SideNav extends React.Component {
               <div className="menu">
                 <DropdownItem>
                   <img
-                    src={require("../assets/projects/dataset.svg")}
+                    src={require("../../assets/projects/dataset.svg")}
                     alt=""
                   ></img>
                   Dataset
                 </DropdownItem>
                 <DropdownItem>
                   <img
-                    src={require("../assets/projects/model.svg")}
+                    src={require("../../assets/projects/model.svg")}
                     alt=""
                   ></img>
                   Model
                 </DropdownItem>
                 <DropdownItem>
                   <img
-                    src={require("../assets/projects/test.svg")}
+                    src={require("../../assets/projects/test.svg")}
                     alt=""
                   ></img>
                   Test
                 </DropdownItem>
                 <DropdownItem>
                   <img
-                    src={require("../assets/projects/Deploy.svg")}
+                    src={require("../../assets/projects/Deploy.svg")}
                     alt=""
                   ></img>
                   Deploy
@@ -110,7 +109,7 @@ class SideNav extends React.Component {
         <NavItem
           path="/progress"
           name="Progress"
-          css={require("../assets/progress.png")}
+          css={require("../../assets/dashboard/progress.png")}
           onItemClick={this.onItemClick}
           active={"/progress" === activePath}
         ></NavItem>
@@ -118,7 +117,7 @@ class SideNav extends React.Component {
         <NavItem
           path="/competitions"
           name="Competitions"
-          css={require("../assets/competitions.png")}
+          css={require("../../assets/dashboard/competitions.png")}
           onItemClick={this.onItemClick}
           active={"/competitions" === activePath}
         ></NavItem>
@@ -126,33 +125,18 @@ class SideNav extends React.Component {
         <NavItem
           path="/settings"
           name="Settings"
-          css={require("../assets/settings.png")}
+          css={require("../../assets/dashboard/settings.png")}
           onItemClick={this.onItemClick}
           active={"settings" === activePath}
         ></NavItem>
-=======
-
-        {items.map((item) => {
-          return (
-            <NavItem 
-              path={item.path}
-              name={item.name}
-              css={item.css}
-              onItemClick={this.onItemClick}
-              active={item.path === activePath}
-              key={item.key}
-            />
-          );
-        })}
->>>>>>> changes in UI
         <div className="logout">
           <div>
             <Link to="/logout">
-              <img src={require("../assets/logout.png")} alt="" />
+              <img src={require("../../assets/dashboard/logout.png")} alt="" />
             </Link>
           </div>
           <div>
-            <h1>Log out</h1>
+            <h1>Log Out</h1>
           </div>
         </div>
       </div>

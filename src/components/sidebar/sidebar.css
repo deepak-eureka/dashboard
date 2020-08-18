@@ -1,99 +1,29 @@
-/* .styled-sidebar {
-  position: fixed;
-  height: 100%;
-  width: 250px;
-  z-index: 1;
-  top: 0;
-  background-color: white;
-  overflow-x: hidden;
-  box-shadow: 5px 5px 5px #888;
-}
-
-.apply-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  margin: 20px;
-}
-
-.apply-flex img {
-  width: 30px;
-  cursor: pointer;
-}
-
-.title span {
-  font-size: 1rem;
-  padding: 20px;
-}
-
-.logo-title {
-  color: white;
-  background-color: #1c9cd6;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  border-radius: 0px 0px 40px 30px;
-}
-
-.logo-title h1 {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.logo-title h4 {
-  font-size: 0.7rem;
-  font-weight: bold;
-}
-
-.logout {
-  color: #1c9cd6;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 20px;
-  position: relative;
-  width: 100%;
-  bottom: 0px;
-  left: 0px;
-  margin-top: 5rem;
-}
-
-.logout img {
-  width: 50px;
-}
-
-.logout h1 {
-  font-size: 1.3rem;
-  padding: 20px;
-}
-
-@media (max-width: 720px) {
-  .styled-sidebar {
-    height: 100%;
-    width: 80px;
-  }
-  .logo-title {
-    border-radius: 0px;
-  }
-  .logo-title img {
-    width: 80px;
-  }
-  .title {
-    display: none;
-  }
-} */
-
 .styled-sidebar {
   position: fixed;
   height: 100%;
-  width: 350px; /* Set the width of the sidebar */
+  width: 300px; /* Set the width of the sidebar */
   z-index: 1;
   top: 0;
   background-color: white;
   overflow-x: hidden;
   box-shadow: 5px 5px 5px #888;
-    
+}
+
+.sidebarClose {
+  height: 100%;
+  width: 80px;
+}
+
+.tle {
+  border-radius: 0px;
+}
+
+.tle img {
+  width: 80px;
+}
+
+.t {
+  display: none;
 }
 
 .apply-flex {
@@ -112,7 +42,6 @@
 .title span {
   font-size: 1.5rem;
   padding: 10px;
-  
 }
 
 .logo-title {
@@ -125,6 +54,7 @@
 }
 
 .logo-title h1 {
+  color: white;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -152,11 +82,12 @@
 }
 
 .logout h1 {
+  color: #1c9cd6;
   font-size: 1.3rem;
   padding: 20px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   .styled-sidebar {
     height: 100%;
     width: 80px;
@@ -172,7 +103,6 @@
   }
 }
 
-<<<<<<< HEAD
 .drop-align {
   margin-left: 5rem;
 }
@@ -196,6 +126,3 @@
 .dropdown-menu.show {
   display: contents;
 }
-=======
-
->>>>>>> changes in UI

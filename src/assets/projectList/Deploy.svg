@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 58.064 45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Deploy" transform="translate(-8 -17)">
+    <path id="Path_21" data-name="Path 21" class="cls-1" d="M31.459,58.153,23.17,49.871l8.289-8.281,2.047,2.047-6.227,6.235,6.227,6.235Z" transform="translate(-4.16 -6.742)"/>
+    <path id="Path_22" data-name="Path 22" class="cls-1" d="M60.637,58.153,58.59,56.106l6.227-6.235L58.59,43.637l2.047-2.047,8.289,8.281Z" transform="translate(-13.871 -6.742)"/>
+    <rect id="Rectangle_19" data-name="Rectangle 19" class="cls-1" width="18.138" height="2.903" transform="translate(32.17 51.347) rotate(-67.49)"/>
+    <path id="Path_23" data-name="Path 23" class="cls-1" d="M8,17V62H66.065V17Zm50.081,4.355a1.452,1.452,0,1,1-1.452,1.452A1.452,1.452,0,0,1,58.081,21.355Zm-5.081,0a1.452,1.452,0,1,1-1.452,1.452A1.452,1.452,0,0,1,53,21.355Zm-5.081,0a1.452,1.452,0,1,1-1.452,1.452A1.452,1.452,0,0,1,47.919,21.355Zm13.79,36.29H12.355V28.613H61.71Z" transform="translate(0 0)"/>
+  </g>
+</svg>

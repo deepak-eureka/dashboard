@@ -1,0 +1,80 @@
+.main {
+  width: 80%;
+  margin: auto;
+  padding: 0;
+}
+
+.heading {
+  margin-bottom: 3rem;
+  color: grey;
+  text-shadow: grey 1px 0 3px;
+}
+
+.addBtn {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.add {
+  margin-right: 35px;
+  background-color: #33a4d9;
+  border: none;
+  color: white;
+  box-shadow: 3px 3px 7px gray;
+}
+
+.card {
+  border: none;
+  box-shadow: 5px 5px 10px gray;
+}
+
+.card_title {
+  color: #33a4d9;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.name {
+  height: 25px;
+  background-color: #f0f1f1;
+  overflow: hidden;
+  border-radius: 4px;
+  margin-top: 9px;
+}
+
+.question {
+  margin-left: 5px;
+  float: left;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  float: right;
+}
+
+.form {
+  margin-top: 20px;
+  background-color: #f0f1f1;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  height: 30px;
+  float: left;
+}
+
+.input:focus {
+  outline-width: 0;
+}
+
+.submit_btn {
+  color: black;
+  background-color: transparent;
+  border: none;
+  float: right;
+}
