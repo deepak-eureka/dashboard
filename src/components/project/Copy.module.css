@@ -1,0 +1,50 @@
+.heading {
+  margin-top: 3rem;
+  color: grey;
+  text-shadow: grey 1px 0 3px;
+}
+
+.card {
+  box-shadow: 3px 3px 5px gray;
+  margin: 20px;
+}
+
+.cardHeader {
+  font-size: 1.5rem;
+}
+
+.cardText {
+  padding: 5px;
+  font-size: 0.8rem;
+}
+
+.layout {
+  margin-left: 30px;
+}
+
+.cardImg {
+  width: 100px;
+}
+
+.cardBottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.cardImg2 {
+  width: 50px;
+}
+
+.midText {
+  font-size: 1rem;
+}
+
+.linkColor {
+  color: #1c9cd6;
+}
+
+.imgBG {
+  width: 80px;
+  background-color: #1c9cd6;
+  border-radius: 50px;
+}

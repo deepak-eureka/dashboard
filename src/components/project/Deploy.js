@@ -15,7 +15,7 @@ export default class Deploy extends Component {
         image: require("../../assets/deploy/python.png"),
         title: "Python",
         text:
-          " Make a project in buddy-ground using block logics and enjoy your logic with implementabe and working experience.",
+          "Make a project in buddy-ground using block logics and enjoy your logic with implementabe and working experience.",
       },
     ],
   };
@@ -40,10 +40,10 @@ export default class Deploy extends Component {
               </Row>
             ))}
           </div>
-          <div>
+          <div className="imgFT">
             <img
               className={styles.footImg}
-              src={require("../../assets/deploy/protesting.png")}
+              src={require("../../assets/deploy/OBJECTS.svg")}
               alt=""
             ></img>
           </div>

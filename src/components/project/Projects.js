@@ -35,18 +35,30 @@ export default class Projects extends Component {
     return (
       <div className={styles.main}>
         <h1 className={styles.heading}>Projects</h1>
-        <div>
-          <div className={styles.img}>
+        <div className={styles.align_row__}>
+          <div>
             <img
               style={{ width: "30%", float: "left" }}
               src={require("../../assets/main.png")}
               alt=""
             />
-            <div className={styles.add}>
-              {/* <button className={styles.add_btn}>
-                 <h3>+</h3> 
-               add and delete button 
-              </button> */}
+          </div>
+          <div>
+            <div className={styles.icons_right}>
+              <Link to="/copy">
+                <img
+                  className={styles.copyImg}
+                  src={require("../../assets/projects/copy.svg")}
+                  alt=""
+                ></img>
+              </Link>
+              <Link to="/add">
+                <img
+                  className={styles.copyImg}
+                  src={require("../../assets/projects/plus.svg")}
+                  alt=""
+                ></img>
+              </Link>
             </div>
           </div>
         </div>
@@ -62,18 +74,28 @@ export default class Projects extends Component {
                           {item.Title}
                         </CardTitle>
                         {/* <CardText> */}
-                        <div className={styles.align_row_items}>
-                          <div className={styles.text}>{item.Text}</div>
-                          <div className={styles.content}>{item.Content}</div>
-                          <div className={styles.aligncol}>
+                        {/* <div className={styles.align_row_items}> */}
+                        <div className={styles.text}>{item.Text}</div>
+                        <div className={styles.content}>{item.Content}</div>
+                        <div className={styles.aligncol}>
+                          <div className={styles.align_row_items}>
                             <div className={styles.shareNDel}> Share</div>
                             <div>
                               <Switch />
                             </div>
+                          </div>
+                          <div className={styles.align_row_items}>
                             <div className={styles.shareNDel}>Delete</div>
-                            <div>Delete logo</div>
+                            <div>
+                              <img
+                                className={styles.trash}
+                                src={require("../../assets/projects/trash.svg")}
+                                alt=""
+                              ></img>
+                            </div>
                           </div>
                         </div>
+                        {/* </div> */}
                         {/* </CardText> */}
                       </div>
                     </div>

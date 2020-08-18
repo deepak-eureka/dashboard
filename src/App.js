@@ -11,13 +11,17 @@ import Dataset from "./components/project/DataSet";
 import Model from "./components/project/Model";
 import Test from "./components/project/Test";
 import Deploy from "./components/project/Deploy";
+import CopyTemplate from "./components/project/Copy";
+import AddProject from "./components/project/Addproject";
 
-function App() {
-  return (
-    <React.Fragment>
-      <BrowserRouter>
-        <div className="app">
-          <Sidebar />
+class App extends React.Component {
+  state = {};
+
+  render() {
+    return (
+      <React.Fragment>
+        <BrowserRouter>
+          <Sidebar sideBar={this.state.sideBar} />
           <div className="home-main">
             <Switch>
               <Route exact path="/" component={Home}></Route>
@@ -28,12 +32,14 @@ function App() {
               <Route exact path="/project/:idx/model" component={Model} />
               <Route exact path="/project/:idx/test" component={Test} />
               <Route exact path="/project/:idx/deploy" component={Deploy} />
+              <Route exact path="/copy" component={CopyTemplate} />
+              <Route exact path="/add" component={AddProject} />
             </Switch>
           </div>
-        </div>
-      </BrowserRouter>
-    </React.Fragment>
-  );
+        </BrowserRouter>
+      </React.Fragment>
+    );
+  }
 }
 
 export default App;

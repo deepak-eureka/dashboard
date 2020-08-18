@@ -30,6 +30,13 @@
 
 .color {
   background-color: #1c9cd6;
+  width: 100px;
+  height: auto;
+  border-radius: 50px;
+}
 
-  border-radius: 30px;
+.imgC {
+  width: 50%;
+  height: 90px;
+  padding: 5px;
 }
