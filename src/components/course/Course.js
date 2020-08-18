@@ -11,7 +11,7 @@ import {
 import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import "./course.css";
-import { Link, Route } from "react-router-dom";
+// import { Link, Route } from "react-router-dom";
 
 export default class Course extends Component {
   constructor() {

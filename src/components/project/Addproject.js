@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styles from "./Addproject.module.css";
-import { Card, Input, Container, Row, Col } from "reactstrap";
+import { Card, Input, Container } from "reactstrap";
 
 export default class Addproject extends Component {
   state = {
